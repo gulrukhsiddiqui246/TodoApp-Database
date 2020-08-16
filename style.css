@@ -1,0 +1,15 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: medium;
+    font-weight: bold;
+    color: #B22222;
+   
+}
+body{
+    background-color: #DCDCDC;
+}
+.gul{
+    padding-left: 10px !important;
+    margin-left: 10px !important;
+}

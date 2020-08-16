@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCYwN5wIJFm9TiwoLZ6IeT4wv5k0QP89Yw",
+          authDomain: "todo-database-347aa.firebaseapp.com",
+          databaseURL: "https://todo-database-347aa.firebaseio.com",
+          projectId: "todo-database-347aa",
+          storageBucket: "todo-database-347aa.appspot.com",
+          messagingSenderId: "526745449260",
+          appId: "1:526745449260:web:8cdfa516ce8c0ff12af289",
+          measurementId: "G-M5R1WPWDKS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+</head>
+<body>
+    <!-- heading -->
+   <div class="container">
+    <div class="row mx-auto text-center">
+        <div class="col h2">
+         <i class="fa fa-list-alt" aria-hidden="true"> Todo App </i> 
+        </div>
+    </div>
+</div>
+<!-- input -->
+<div class="container pt-3 mt-3">
+    <div class="row mx-auto text-center">
+        <div class="col-sm-12 mx-auto text-center">
+            <input type="text" id="todo-item" placeholder="Enter the todo item ">
+            <button onclick="addTodo()"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+            <button onclick="deleteAll()"><i class="fa fa-trash" aria-hidden="true"> Delete all</i></button>
+        </div>
+        
+    </div>
+</div>
+<!-- list -->
+<div class="container pt-5 mt-5 ">
+    <div class="row ">
+        <div class="col shadow-lg p-3 mb-5 bg-white rounded">
+            <ul class="" id="list">
+
+            </ul>
+
+
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</html>
